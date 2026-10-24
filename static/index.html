@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HelixNext</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="brand-header">
+        <h1>HELIX NEXT</h1>
+        <p>Gene screening assist for CRISPR-like technologies</p>
+      </header>
+      <section class="dna-stage panel" aria-label="Three-dimensional DNA visualizer">
+        <div class="dna-stage-heading">
+          <div>
+            <p class="eyebrow">HELIX / LIVE MODEL VIEW</p>
+            <h2 id="visualizer-name">ACGT repeat</h2>
+            <p id="visualizer-description">Stable periodic sequence</p>
+          </div>
+          <div id="category-pills" class="category-pills" aria-label="Sequence categories"></div>
+        </div>
+        <div id="dna-viewport" class="dna-viewport">
+          <div id="dna-canvas" class="dna-canvas"></div>
+          <div class="dna-readout"><span id="visualizer-length">68 bases</span><span>5' → 3'</span></div>
+          <div class="dna-hint">select a sequence or category to change the helix</div>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <section class="main-column">
+          <div class="panel sequence-panel">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">02 / EXACT SEQUENCE</p>
+                <h2 id="sequence-title">No sequence loaded</h2>
+              </div>
+              <div class="sequence-meta"><span id="sequence-length">0 bases</span><span class="mono">5' → 3'</span></div>
+            </div>
+            <div id="exact-sequence" class="exact-sequence empty-state">Your selected DNA will appear here exactly as loaded.</div>
+            <div class="legend"><span><i class="legend-swatch base-a"></i>A</span><span><i class="legend-swatch base-c"></i>C</span><span><i class="legend-swatch base-g"></i>G</span><span><i class="legend-swatch base-t"></i>T</span></div>
+          </div>
+
+          <div class="panel hunt-panel">
+            <div class="hunt-intro">
+              <div>
+                <p class="eyebrow">03 / CAUSAL HUNT</p>
+                <h2>Find likely wrong bases</h2>
+                <p>The first 32 bases establish context. Hunt begins scoring after that warm-up window, so early cold-start uncertainty is not reported as a mutation.</p>
+              </div>
+              <button id="hunt-button" class="button button-primary" type="button" disabled><span class="button-icon">⌁</span> Hunt</button>
+            </div>
+            <div id="error-box" class="error-box" hidden></div>
+            <div id="summary" class="summary-grid" hidden></div>
+            <div id="results" class="results empty-state">Run Hunt to see the causal prediction map.</div>
+          </div>
+        </section>
+      </section>
+
+      <footer>HELIXNEXT V2 <span>·</span> causal context <strong id="context-size">256</strong> bases <span>·</span> warm-up <strong id="warmup-size">32</strong> bases <span>·</span> candidate signals are model findings, not confirmed edits</footer>
+    </main>
+    <script src="/app.js" defer></script>
+  </body>
+</html>

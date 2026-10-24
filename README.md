@@ -55,6 +55,20 @@ A position becomes a candidate signal when either:
 
 These are model-generated screening signals, not confirmed biological edits.
 
+## Data
+
+Reference genome resources are available from the UCSC hg38 downloads directory:
+
+- [UCSC hg38 data downloads](https://hgdownload.cse.ucsc.edu/goldenPath/hg38/bigZips)
+
+These resources can support future experiments with real genomic regions alongside the current synthetic sequences.
+
+## Notebook
+
+The HelixNext experiments and model development work are documented in the Kaggle notebook:
+
+- [HelixNext Kaggle notebook](https://www.kaggle.com/code/aravindariharasudhan/helix-next)
+
 ## Project layout
 
 ```text

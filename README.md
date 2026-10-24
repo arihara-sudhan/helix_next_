@@ -1,6 +1,6 @@
 # HelixNext
 
-![DNA strand](https://savageandgray.co.uk/wp-content/uploads/2017/04/DNA-Strand.gif)
+[![DNA strand](https://savageandgray.co.uk/wp-content/uploads/2017/04/DNA-Strand.gif)](https://images.pexels.com/photos/35967917/pexels-photo-35967917/free-photo-of-abstract-visual-representation-of-dna-helix.png?cs=tinysrgb&dpr=1&w=500)
 
 **HelixNext** is a local research interface for exploring causal next-base predictions from a saved `HelixNextV2` model. It presents synthetic DNA sequences exactly, visualizes the selected sequence as a colored helix, and highlights candidate base-level mismatches discovered during a Hunt.
 
